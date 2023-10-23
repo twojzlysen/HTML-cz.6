@@ -33,24 +33,58 @@
 		<article>
 		
 			<form action "" method ="post">
+				<div class="row">
+					<fieldset>
+						<legend> Rodzaj nadzwozia </legend>
 
-				<fieldset>
-					<legend> Rodzaj nadzwozia </legend>
+					<div><label> <input type="radio" value="1" name="nadwozie" checked>Hatchback</label></div>
+					<div><label> <input type="radio" value="2" name="nadwozie">Kabriolet</label></div>
+					<div><label> <input type="radio" value="3" name="nadwozie">Kombi</label></div>
 
-				<div><label> <input type="radio" value="1" name="nadwozie" checked>Hatchback</label></div>
-				<div><label> <input type="radio" value="2" name="nadwozie">Kabriolet</label></div>
-				<div><label> <input type="radio" value="3" name="nadwozie">Kombi</label></div>
+					</fieldset>
+				</div>
 
-				</fieldset>
-				<label for="silnik"> Rodzaj silnika</label>
-				<select id="silnik">
-					<option>Wysokoprężny</option>
-					<option selected>Benzynowy</option>
-					<option>Elektryczny</option>
-					<option>Hybrydowy</option>
+				<div class="row">
+					<label for="silnik"> Rodzaj silnika</label>
+					<select id="silnik">
+						<option value="w">Wysokoprężny</option>
+						<option value="b" selected>Benzynowy</option>
+						<option value="e">Elektryczny</option>
+						<option value="h">Hybrydowy</option>
 
 
-				</select>
+					</select>
+				</div>
+
+				<div class="row">
+
+					<fieldset>
+
+						<legend>Wyposażenie samochodu</legend>
+						<div class="col">
+							<div><label><input type="checkbox" name="wyp[]" value="1" checked> Klimatyzacja </label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="2" checked> Systemy ESP i ABS </label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="3"> Tapicerka skórzana </label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="4"> Tempomat </label></div>
+						</div>
+
+						<div class="col">
+							<div><label><input type="checkbox" name="wyp[]" value="5"> Tylny spojler dachowy </label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="6"> Radio z Bluetooth </label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="7"> Reflektory przeciwmgłowe </label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="8"> Przyciemniane tylne szyby </label></div>
+						</div>
+
+						<div class="col">
+							<div><label><input type="checkbox" name="wyp[]" value="9"> Czujniki parkowania</label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="10"> Podgrzewane fotele</label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="11"> Składane lusterka</label></div>
+							<div><label><input type="checkbox" name="wyp[]" value="12"> Światła LED do jazdy dziennej </label></div>
+						</div>
+
+					</fieldset>
+
+				</div>
 
 			</form>		
 			
