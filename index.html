@@ -32,7 +32,7 @@
 	
 		<article>
 		
-			<form action "" method ="post">
+			<form action="order.php" method ="post">
 				<div class="row">
 					<fieldset>
 						<legend> Rodzaj nadzwozia </legend>
@@ -46,7 +46,7 @@
 
 				<div class="row">
 					<label for="silnik"> Rodzaj silnika</label>
-					<select id="silnik">
+					<select id="silnik" name="silnik">
 						<option value="w">Wysokoprężny</option>
 						<option value="b" selected>Benzynowy</option>
 						<option value="e">Elektryczny</option>
@@ -86,6 +86,33 @@
 
 				</div>
 
+				<div class="row">
+					<label for="choinka"> Jakie choinki zapachowe?</label>
+					<div style="margin-top: 10px;">
+					<select id="choinka" name="choinka[]" multiple size="4">
+						<option value="k">kokosowa</option>
+						<option value="c" selected>cytrynowa</option>
+						<option value="t">truskowkowa</option>
+						<option value="b">brzoskwiniowa</option>
+
+
+					</select>
+					</div>
+				</div>
+				<div class="row">
+					<label> Imię <input type="text" name="imie" placeholder="Jak masz na imię?"></label>
+					<label> Hasło <input type="password" name="haslo"></label>
+					<label> Szukaj <input type="search" name="fraza"></label>
+				</div>
+
+				<div class="row">
+					<label> Ile kluczyków <input type="number" name="kluczyk" step="1"></label>
+				</div>
+				<div class="row">
+					<input type="submit" value="Zamawiam!">
+					<input type="button" value="Zamawiam!">
+					<button type="button">Zamawiam!</button>
+				</div>
 			</form>		
 			
 		</article>
